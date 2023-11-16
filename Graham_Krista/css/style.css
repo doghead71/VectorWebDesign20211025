@@ -2,3 +2,4 @@ body {background-color:rgb(255, 253, 250);}
 h1 {color: rgb(82, 119, 39) !important;}
 p {color: rgb(82, 119, 39);}
 #soln_para{color: rgb(54, 99, 141);}
+p {border-style:dashed;border-width:8px;border-color:rgb(66, 141, 141);}
