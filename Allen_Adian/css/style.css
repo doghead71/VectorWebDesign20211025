@@ -1,0 +1,9 @@
+body {background-color:rgba(179, 179, 179, 0.918)}
+h1 {color:rgb(84, 2, 161) !important}
+.fontbigger{
+    font-size:larger;
+    font-weight: bold; ;
+    color: black /*!important*/;
+            }
+#soln_para {color:red;}
+p {color:navy}
