@@ -22,3 +22,10 @@ p {
         /*!important*/
     ;
 }
+
+#intro {
+    border: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: aliceblue;
+}
