@@ -7,3 +7,21 @@ h1 {color:rgb(84, 2, 161) !important}
             }
 #soln_para {color:red;}
 p {color:navy}
+#intro  { 
+    border: 4px groove;
+      } 
+  .bordered{
+    border: 2px dashed blue;
+    border-radius: 4px;
+    padding-left: 5px; 
+    margin-bottom: 5px;
+  }
+  .bordered-left{
+    border-left-width: 5px;
+    border-left-style: solid;
+    Border-left-color: black;
+    Padding-left: 5px;
+  }
+div{
+    margin-bottom: 20px !important;
+  }
