@@ -7,3 +7,9 @@ p { color: navy;}
     font-weight: 500;
     color: peru /*!important*/;}
     
+    .bordered {
+        border: 2px solid gold;
+        border-radius: 3px;
+    }
+
+    
