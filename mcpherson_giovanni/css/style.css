@@ -8,8 +8,53 @@ p { color: navy;}
     color: peru /*!important*/;}
     
     .bordered {
-        border: 2px solid gold;
+        border: 2px dashed gold;
         border-radius: 3px;
+        padding-left: 5px;
+        margin-bottom: 50px;
+    }
+    .bordered-left {
+        border-left-width: 3px;
+        border-left-style: solid;
+        border-left-color: blueviolet;
+        padding-left: 5px;
+
+    }
+    nav{
+        background-color: tan;
+        font-size: large;
+        text-transform: capitalize;
+        color: whitesmoke;
+        margin: 0px;
+        padding-left: 5px;
     }
 
-    
+    nav > ul {
+        list-style-type: none;
+        margin: 0px;
+        padding-left: 0px;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 5px;
+        border-right: 2px solid rgb(174, 129, 129);
+        padding-right: 7px;
+
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav a:link {
+        color: whitesmoke;
+    }
+
+    nav a:visited {
+        color: whitesmoke;
+    }
+
+    nav a:hover {
+        color: black;
+    }
