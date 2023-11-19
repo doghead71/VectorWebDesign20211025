@@ -24,3 +24,46 @@ p { color: navy;}
 div {
   margin-bottom: 20px;
 }
+nav {
+  background-color: rgb(182, 92, 92);
+  font-size: large;
+  text-transform: capitalize;
+  color: antiquewhite;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+  border-right: 2px solid brown;
+}
+
+nav a {
+  text-decoration: none;
+  font-variant: small-caps;
+  display: inline-block;
+  padding: 8px;
+}
+
+nav a:link {
+  color: antiquewhite;
+}
+
+nav a:visited {
+  color: antiquewhite;
+}
+
+nav a:hover {
+  background-color: navy;
+}
+
+nav .active {
+  background-color: grey;
+}
+
