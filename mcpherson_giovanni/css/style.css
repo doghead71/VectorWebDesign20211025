@@ -34,17 +34,17 @@ p { color: navy;}
         margin: 0px;
         padding-left: 0px;
     }
-
+    
     nav li {
         display: inline;
-        margin-right: 5px;
-        border-right: 2px solid rgb(174, 129, 129);
         padding-right: 7px;
-
+        border-right: none;
     }
 
     nav a {
         text-decoration: none;
+        display: inline-block;
+        padding: 8px;
     }
 
     nav a:link {
@@ -55,6 +55,10 @@ p { color: navy;}
         color: whitesmoke;
     }
 
-    nav a:hover {
+    nav a:hover:not(.active) {
         color: black;
+    }
+
+    nav .active {
+        background-color: rgb(183, 183, 180);
     }
