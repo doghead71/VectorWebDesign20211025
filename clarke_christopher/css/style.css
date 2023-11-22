@@ -1,0 +1,12 @@
+<style>
+
+    body {background-color:rgb(255, 240, 190);}
+      p { color: red;}
+    h1 { color: purple !important;} 
+  .fontbigger { font-size: larger; 
+                font-weight: bold;
+  }       
+  #soln_para {color:green;}
+  
+  
+  </style>
