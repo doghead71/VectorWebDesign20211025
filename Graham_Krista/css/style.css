@@ -1,5 +1,48 @@
 body {background-color:rgb(255, 253, 250);}
 h1 {color: rgb(82, 119, 39) !important;}
-p {color: rgb(82, 119, 39);}
+.fontbigger{
+    font-size: larger; 
+    font-weight: bold;
+    color: black "!important";}
+
 #soln_para{color: rgb(54, 99, 141);}
-p {border-style:dashed;border-width:8px;border-color:rgb(66, 141, 141);}
+p {color: rgb(82, 119, 39);}
+#intro{
+    border:2px solid
+}
+    .boredered{
+        border: 2px solid
+    }
+
+#soln_para{color: rgb(54, 99, 141);}
+
+
+nav > ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    border-right:2px solid rgb(42, 120, 165);
+    border-left:2px solid rgb (42, 120, 165);
+}
+
+nav a {
+    text-decoration: none;
+    font-variant: small-caps;
+    display: inline-block;
+    padding: 8px;
+}
+
+nav a:link {
+    color: antiquewhite;
+}
+
+nav a:visited {
+    color: antiquewhite;
+}
+
+nav a:hover:nt(.active) {
+    background-color: darkolivegreen;
+}
