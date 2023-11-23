@@ -34,7 +34,7 @@ p { color: navy;}
         margin: 0px;
         padding-left: 0px;
     }
-    
+
     nav li {
         display: inline;
         padding-right: 7px;
@@ -60,5 +60,5 @@ p { color: navy;}
     }
 
     nav .active {
-        background-color: rgb(183, 183, 180);
+        background-color: rgb(183, 183, 180); 
     }
