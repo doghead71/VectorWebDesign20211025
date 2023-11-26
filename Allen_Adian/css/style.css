@@ -1,67 +1,130 @@
-body {background-color:rgba(179, 179, 179, 0.918)}
-h1 {color:rgb(84, 2, 161) !important}
-.fontbigger{
-    font-size:larger;
-    font-weight: bold; ;
-    color: black /*!important*/;
-            }
-#soln_para {color:red;}
-p {color:navy}
-#intro  { 
-    border: 4px groove;
-      } 
-  .bordered{
-    border: 2px dashed blue;
-    border-radius: 4px;
-    padding-left: 5px; 
-    margin-bottom: 5px;
-  }
-  .bordered-left{
-    border-left-width: 5px;
-    border-left-style: solid;
-    Border-left-color: black;
-    Padding-left: 5px;
-  }
+body {
+  background-color: rgba(179, 179, 179, 0.918);
+  box-sizing: border-box;
+}
 
-div{
-    margin-bottom: 20px !important;
-  }
+body * {
+  box-sizing: border-box;
+}
 
-  nav{
-    background-color: rgb(208, 162, 235);
-    text-transform: capitalize;
-    font-size: large;
-    color: white;
-     
-    }
+h1 {
+  color: rgb(84, 2, 161) !important
+}
 
-    nav > ul {
-      list-style-type: none;
-      margin: 0px;
-      padding: 8px;
-    }
-    nav li {
-      display: inline;
-      margin-right: 5px;
-      border-right: 2px solid purple;
-      padding-right: 4px;
-    }
-  nav a {
-      text-decoration: none;
-      padding: 8px;
-    }
+.fontbigger {
+  font-size: larger;
+  font-weight: bold;
+  ;
+  color: black
+    /*!important*/
+  ;
+}
 
-    nav a:link {
-      color:antiquewhite
-    }
+#soln_para {
+  color: red;
+}
 
-    nav a:visited {
-      color:antiquewhite
-    }
+p {
+  color: navy
+}
 
-    nav a:hover{
-      background-color:black
-    }
-    nav .active{
-      background-color:rgb(55, 175, 18)
-    }
+#intro {
+  border: 4px groove;
+}
+
+.bordered {
+  border: 2px dashed blue;
+  border-radius: 4px;
+  padding-left: 5px;
+  margin-bottom: 5px;
+}
+
+.bordered-left {
+  border-left-width: 5px;
+  border-left-style: solid;
+  Border-left-color: black;
+  Padding-left: 5px;
+}
+
+div {
+  margin-bottom: 20px !important;
+}
+
+#navbar {
+  position: fixed;
+  Width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+#content {
+  position: relative;
+  top: 120px;
+
+}
+
+
+nav {
+  background-color: rgb(208, 162, 235);
+  text-transform: capitalize;
+  font-size: large;
+  color: white;
+
+}
+
+nav>ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 8px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 5px;
+  border-right: 2px solid purple;
+  padding-right: 4px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px;
+}
+
+nav a:link {
+  color: antiquewhite
+}
+
+nav a:visited {
+  color: antiquewhite
+}
+
+nav a:hover {
+  background-color: black
+}
+
+nav .active {
+  background-color: rgb(55, 175, 18)
+}
+
+#float_example img {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#float_img_gallery .box {
+  float: left;
+  width: 33.33%;
+  padding-right: 10px;
+
+}
+
+#float_img_gallery img {
+  max-width: 100%;
+}
