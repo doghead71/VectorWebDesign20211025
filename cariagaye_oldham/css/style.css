@@ -1,6 +1,10 @@
 body {
     background-color: rgb(11, 10, 9);
-    color: rgb(250, 209, 253)
+    color: rgb(250, 209, 253);
+}
+
+body * {
+    box-sizing: border-box;
 }
 
 h1 {
@@ -39,6 +43,18 @@ p {
 
 div {
     margin-bottom: 10px;
+}
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    top: 125px;
 }
 
 nav {
@@ -80,4 +96,25 @@ nav a:link{
 
 nav .active{
     background-color: darkgreen;
+}
+
+#float_example > img{
+    float:left;
+    padding: 0px 10px 5px 0px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#float_img_gallery .box{
+    float: left;
+    width: 33.33%;
+    padding: 0px 10px 0px 0px;
+}
+
+#float_img_gallery img {
+    max-width: 100%;
 }
