@@ -14,10 +14,8 @@ h1 {
 .fontbigger {
   font-size: larger;
   font-weight: bold;
-  ;
-  color: black
-    /*!important*/
-  ;
+  
+  color: black;/*!important*/ 
 }
 
 #soln_para {
@@ -60,7 +58,6 @@ div {
 #content {
   position: relative;
   top: 120px;
-
 }
 
 
@@ -69,7 +66,6 @@ nav {
   text-transform: capitalize;
   font-size: large;
   color: white;
-
 }
 
 nav>ul {
@@ -127,4 +123,36 @@ nav .active {
 
 #float_img_gallery img {
   max-width: 100%;
+}
+.flexy-content{
+  background-color: blue;
+  display: flex;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: space-between;
+ /* height: 250px;*/
+  align-items: center;
+
+}
+
+.flexy-content > div {
+  background-color: grey;
+  font-size: 40px;
+  padding: 35px;
+  margin: 15px;
+  flex-grow: 1;
+}
+.flexy-content > #four {
+  flex-grow: 4;
+}
+@media (max-width:400px){
+  .flexy-content{
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .flexy-content > div{
+
+  }
 }
