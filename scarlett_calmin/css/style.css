@@ -1,29 +1,61 @@
-body {background-color: rgb(255, 240, 194); }
-h1 { color:brown !important;}
+body {
+  background-color: rgb(255, 240, 194);
+ }
+
+body * {
+    box-sizing: border-box;
+}
+
+h1 { 
+  color:brown !important;
+}
+
 .fontbigger { 
   font-size: larger; /* confer with client */
   font-weight: bold;
   color: black /*!important*/;
-}   
+}  
+
 #soln_para {color: red;}
+
 p { color: navy;}
+
 #intro {
   border: 2px groove;
 }
+
 .bordered {
   border: 2px dashed blue;
   border-radius: 5px;
   padding-left: 5px;
 }
+
 .bordered-left {
   border-left-width: 5px;
   border-left-style: solid;
   border-left-color: blueviolet;
   padding-left: 8px;
 }
+
 div {
   margin-bottom: 20px;
 }
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+#content {
+  position: relative;
+  top: 125px;
+}
+
+
+  
+
 nav {
   background-color: rgb(182, 92, 92);
   font-size: large;
@@ -67,3 +99,61 @@ nav .active {
   background-color: grey;
 }
 
+#float_example img {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#float_img_gallery .box{
+  float: left;
+  width: 33.33%;
+  padding-right: 10px;
+}
+
+#float_img_gallery img {
+  max-width: 100%;
+}
+
+.flexy-content {
+  background-color: blue;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  /* height:250px; */
+  align-items: center;
+
+}
+
+.flexy-content > div {
+  background-color: grey;
+  font-size: 40px;
+  padding: 35px;
+  margin: 15px;
+  flex-grow: 1;  
+}
+
+.flexy-content > #four {
+  flex-grow: 4;
+}
+
+
+@media (max-width: 400px) {
+  .flexy-content {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .flexy-content > div {
+    flex: 100%
+  }
+}
