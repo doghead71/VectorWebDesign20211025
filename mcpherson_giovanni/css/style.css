@@ -1,5 +1,13 @@
-body {background-color: azure;}
-h1 { color: green !important;}
+body {background-color: azure;
+    box-sizing: border-box;
+}
+body * {
+    box-sizing: border-box;
+}
+h1 { 
+    color: green !important;
+}
+
 p { color: navy;}
 #Solving_para {color: red;}
 .fontbigger { 
@@ -20,7 +28,23 @@ p { color: navy;}
         padding-left: 5px;
 
     }
-    nav{
+    div {
+        margin-bottom: 20px;
+    }
+
+    #navbar {
+        position: fixed;
+        width: 100;
+        top: 0;
+        z-index: 1;
+    }
+
+    #content {
+        position: relative;
+        top: 125px;
+    }
+
+    nav {
         background-color: tan;
         font-size: large;
         text-transform: capitalize;
@@ -61,4 +85,37 @@ p { color: navy;}
 
     nav .active {
         background-color: rgb(183, 183, 180); 
+    }
+
+    #float_example img {
+        float: left;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    #float_img_gallery .box {
+        float: left;
+        width: 33.33%;
+        padding-right: 10px;
+    }
+        
+    #float_img_gallery img {
+        max-width: 100%;
+    }
+
+    .flexy-content {
+        background-color: blue;
+    }
+
+    .flexy-content > div {
+        background-color: grey;
+        font-size: 40px;
+        padding:15px;
+        margin: 5px;
     }
