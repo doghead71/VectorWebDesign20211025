@@ -110,12 +110,36 @@ p { color: navy;}
     }
 
     .flexy-content {
-        background-color: blue;
+        background-color:indigo;
+        display: flex;
+        /* flex-direction: row;
+        flex-wrap: wrap;*/
+        flex-flow: row wrap ;
+        justify-content: space-evenly;
+        height:250px;
+        align-items: center;
     }
 
     .flexy-content > div {
         background-color: grey;
         font-size: 40px;
-        padding:15px;
-        margin: 5px;
+        padding: 35px;
+        margin: 12px;
+        flex-grow: 1;
+    }
+
+    .flexy-content > #four {
+        flex-grow: 4;
+    }
+
+    @media (max-width: 400px) {
+        .flexy-content {
+            flex-flow: column nowrap;
+            justify-content: left;
+            align-items: stretch;
+        }  
+        .flexy-content > div {
+            flex: 100%
+        }
+
     }
