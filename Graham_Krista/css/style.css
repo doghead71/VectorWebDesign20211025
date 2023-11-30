@@ -7,13 +7,23 @@ h1 {color: rgb(82, 119, 39) !important;}
 
 #soln_para{color: rgb(54, 99, 141);}
 p {color: rgb(82, 119, 39);}
+#bullet_points{color:blueviolet}
 #intro{
-    border:2px solid
+    border:2px solid;
 }
-    .boredered{
-        border: 2px solid
-    }
+    .bordered{
+        border: 2px solid olivedrab;
+        border-radius: 5px;
+        padding-left: 6px;
+}
 
+    .bordered-left{
+        border-left-width: 5px;
+        border-left-style: dashed;
+        border-left-color: blueviolet;
+        padding-left: 6px;
+        margin-top: 4px; 
+    }
 #soln_para{color: rgb(54, 99, 141);}
 
 
