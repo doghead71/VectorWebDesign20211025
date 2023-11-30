@@ -54,7 +54,7 @@ div {
 
 #content {
     position: relative;
-    top: 125px;
+    top: 160px;
 }
 
 nav {
@@ -117,4 +117,40 @@ nav .active{
 
 #float_img_gallery img {
     max-width: 100%;
+}
+
+.flexy-content {
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    flex-flow: row wrap;
+    justify-content: center;
+    /*height: 250px;*/
+    align-items: center;
+}
+
+.flexy-content > div {
+    background-color: cornflowerblue;
+    font-size: 40px;
+    padding: 25px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.flexy-content > #four {
+    flex-grow: 4;
+}
+
+@media (max-width: 500px) {
+    .flexy-content{
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    .flexy-content > div{
+        flex: 100%;
+    }
 }
