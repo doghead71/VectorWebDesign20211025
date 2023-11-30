@@ -135,7 +135,7 @@ p { color: navy;}
     @media (max-width: 400px) {
         .flexy-content {
             flex-flow: column nowrap;
-            justify-content: left;
+            justify-content: space-around;
             align-items: stretch;
         }  
         .flexy-content > div {
