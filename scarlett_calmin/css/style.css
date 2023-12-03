@@ -54,7 +54,17 @@ div {
 }
 
 
-  
+.logo {
+  /* width: 100px; */
+  height: 100px;
+  display: inline-block;
+  margin: 0px;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
 
 nav {
   background-color: rgb(182, 92, 92);
@@ -65,10 +75,35 @@ nav {
   padding: 0px;
 }
 
+ nav.flexy-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+ }
+
 nav > ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+}
+
+ul.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.navlinks li {
+  border-right: none;
+}
+
+ul.navlinks a {
+  background-color: rgb(182, 92, 92);
+  border-right: 2px solid brown;
+}
+
+ul.navlinks .active {
+  background-color: grey;
 }
 
 nav li {
@@ -146,7 +181,7 @@ nav .active {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .flexy-content {
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -156,4 +191,28 @@ nav .active {
   .flexy-content > div {
     flex: 100%
   }
+
+  nav.flexy-nav {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.navlinks {
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(182, 92, 92);
+  }
+
+  ul.navlinks li {
+    background-color: rgb(182, 92, 92);
+    display: flex
+  }
+
+  ul.navlinks a {
+    border-right: none;
+  }
+
 }
