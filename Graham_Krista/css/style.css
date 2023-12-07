@@ -24,8 +24,18 @@ p {color: rgb(82, 119, 39);}
         padding-left: 6px;
         margin-top: 4px; 
     }
-#soln_para{color: rgb(54, 99, 141);}
+    div{
+        margin-bottom: 20px;
+    }
 
+nav{
+    background-color: olivedrab;
+    text-transform: capitalize;
+    font-size:large;
+    color:azure;
+    margin: 0px;
+    padding: 6px;
+}
 
 nav > ul {
     list-style-type: none;
@@ -34,25 +44,40 @@ nav > ul {
 }
 
 nav li {
-    border-right:2px solid rgb(42, 120, 165);
-    border-left:2px solid rgb (42, 120, 165);
+    display: inline;
+    margin-right: 5px;
+    border-right: 2px solid rgb(48, 63, 18);
+    padding-right: 5px;
 }
 
-nav a {
+nav a{
     text-decoration: none;
+    padding: 5px;
     font-variant: small-caps;
-    display: inline-block;
-    padding: 8px;
 }
 
 nav a:link {
-    color: antiquewhite;
+    color: azure;
 }
 
-nav a:visited {
-    color: antiquewhite;
+nav a:visited{
+    color: azure;
 }
 
-nav a:hover:nt(.active) {
-    background-color: darkolivegreen;
+nav a:hover:not(.active) {
+    background-color: rgb(172, 199, 119);
 }
+
+nav .active{
+    background-color:rgb(70, 90, 31);
+}
+
+
+
+
+
+
+
+#soln_para{color: rgb(54, 99, 141);}
+
+
