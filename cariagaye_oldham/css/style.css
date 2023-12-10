@@ -323,3 +323,71 @@ nav.flexy-nav {
         text-align: justify;
     }
 }
+
+.square-box{
+    padding: 40px;
+    width: 40px;
+    border: 1px dotted rgb(246, 120, 204);
+}
+
+.bar{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgb(246, 120, 204);
+}
+
+.grid-of-cards{
+    background-color: rgba(137, 43, 226, 0.228);
+    padding: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 20px;
+}
+
+.grid-content{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.asym-layout{
+    padding: 40px;
+}
+
+.asym-content{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.asym-content > #left{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-grow: 4;
+    padding: 60px;
+    border: 1px solid rgb(246, 120, 204);
+}
+
+.asym-content > #right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-grow: 2;
+    padding: 60px;
+    border: 1px solid rgb(246, 120, 204);
+}
+
+#right input{
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    row-gap: 15px;
+}
+
+#click-me{
+    background-color:rgb(74, 104, 250);
+    color: aliceblue;
+}
