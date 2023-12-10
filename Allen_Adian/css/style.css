@@ -60,6 +60,18 @@ div {
   top: 120px;
 }
 
+.logo {
+  /* width: 100px; */
+  height: 100px;
+  display: inline-block;
+  margin: 0px;
+}
+
+.logo img {
+  width: auto;
+  height: 100%;
+}
+
 
 nav {
   background-color: rgb(208, 162, 235);
@@ -68,10 +80,36 @@ nav {
   color: white;
 }
 
+nav.flex-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+ }
+
+
 nav>ul {
   list-style-type: none;
   margin: 0px;
   padding: 8px;
+}
+
+ul.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.navlinks li {
+  border-right: none;
+}
+
+ul.navlinks a {
+  background-color: rgb(208, 162, 235);
+  border-right: 2px solid purple;
+}
+
+ul.navlinks .active {
+  background-color: rgb(55, 175, 18)
 }
 
 nav li {
