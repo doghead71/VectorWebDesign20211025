@@ -156,3 +156,53 @@ nav .active {
 
   }
 }
+
+.flex-nav{
+ 
+  display: flex;
+  /*flex-direction: row;
+  flex-wrap: wrap;*/
+  flex-flow: row wrap;
+  justify-content: left;
+align-items:center;
+  
+}
+.flex-nav > div {
+  background-color: rgb(208, 162, 235);
+  text-transform: capitalize;
+  font-size: large;
+   list-style-type: none;
+    padding: 8px;
+}
+.flex-nav > #end {
+  flex-grow: 4;
+}
+.flex-nav li {
+  display: inline;
+ 
+  margin-right: 5px;
+  border-right: 2px solid purple;
+  /*padding-right: 4px;*/
+}
+
+.flex-nav a {
+  text-decoration: none;
+  padding: 8px;
+}
+
+.flex-nav a:link {
+  color: antiquewhite
+}
+
+.flex-nav a:visited {
+  color: antiquewhite
+}
+
+.flex-nav a:hover {
+  background-color: black
+}
+
+.flex-nav .active {
+  background-color: rgb(55, 175, 18)
+}
+-->
