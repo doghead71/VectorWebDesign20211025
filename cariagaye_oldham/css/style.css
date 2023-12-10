@@ -407,13 +407,14 @@ form {
 .split-wrap{
     display: flex;
     flex-flow: row nowrap;
+    justify-content: center;
 }
 
 .split-box{
     display: flex;
     flex-flow: row;
     column-gap: 20px;
-    padding: 50px;
+    padding: 60px;
     align-items: center;
 }
 
