@@ -205,4 +205,41 @@ align-items:center;
 .flex-nav .active {
   background-color: rgb(55, 175, 18)
 }
+
+@media (max-width: 600px) {
+  .flexy-content {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .flexy-content > div {
+    flex: 100%
+  }
+
+  nav.flex-nav {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul.navlinks {
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(182, 92, 92);
+  }
+
+  ul.navlinks li {
+    background-color: rgb(182, 92, 92);
+    display: flex
+  }
+
+  ul.navlinks a {
+    border-right: none;
+  }
+
+}
+
 -->
