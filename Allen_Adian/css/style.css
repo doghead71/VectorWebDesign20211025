@@ -146,7 +146,7 @@ nav .active {
 .flexy-content > #four {
   flex-grow: 4;
 }
-@media (max-width:400px){
+/*@media (max-width:400px){
   .flexy-content{
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -161,7 +161,7 @@ nav .active {
  
   display: flex;
   /*flex-direction: row;
-  flex-wrap: wrap;*/
+  flex-wrap: wrap;
   flex-flow: row wrap;
   justify-content: left;
 align-items:center;
@@ -182,7 +182,7 @@ align-items:center;
  
   margin-right: 5px;
   border-right: 2px solid purple;
-  /*padding-right: 4px;*/
+  /*padding-right: 4px;
 }
 
 .flex-nav a {
@@ -204,7 +204,7 @@ align-items:center;
 
 .flex-nav .active {
   background-color: rgb(55, 175, 18)
-}
+}*/
 
 @media (max-width: 600px) {
   .flexy-content {
