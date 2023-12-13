@@ -11,21 +11,42 @@
         width="70px"
         height="70px"/>
 
-        <img src = ".../images/logo.jpg"
+        <img src = "./images/logo.jpg"
         height = "100px"
         width = "100px"/>
 
     <nav> 
         <ul>
             <li><a href="../index.html">Home Page</a></li>
-            <li><a class="active" href="#">About Us</a></li>
+            <li><a class="active" href="#">About Us</a></li> 
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./layout.html">Layout</a></li>        
         </ul>
     </nav>
      
         <h1 style="color:green">Contact Us</h1><!-- TO BE CHANGED LATER -->
 
+        <div id="form-container" class="form-container">
+            <form>
+                <label for="fname">First Name</label>   
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+                <br/> <br/>
+                <label for="lname">Last Name</label>   
+                <input type="text" id="lname" name="lastname" placeholder="Your name.." />
+                <br/> <br/>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Jamaica">Jamaica</option>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>    
+                </select>
+                </label>
+            </form>
+        </div>
+
+
         <div id = "float_example" class="clearfix">
-            <img src = ".../images/logo.jpg"
+            <img src = "./images/logo.jpg"
             height = "50px"
             width = "50px"/>
             <p>Please feel free to contact us -- WA I T F O R I N T R A DAY C H A R T S ( 4 - H O U R
