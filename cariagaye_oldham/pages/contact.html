@@ -24,6 +24,48 @@
 
         <div id="content">
             <h1 style="color: blue">CONTACT US</h1>
+           
+            <div class="form-container"  id="form-container" >
+            <form action="/process_contact.html" class="form-contact" name="contactForm">
+                <div class="form-input">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..." required>
+                </div>
+               
+                <div class="form-input">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..." required>
+                </div>
+                
+                <div class="form-input">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="jamaica">Jamaica</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="barbados">Barbados</option>
+                </select>
+                </div>
+                
+                <div class="form-input">
+                <label for="subjecttext">Subject</label>
+                <textarea name="subjecttext" id="subjecttext" placeholder="Write something..." value="defaultvalue"
+                style="width: 100%; height: 100px;"></textarea>
+                </div>
+                
+                <div>
+                    <input id="termscheckbox" type="checkbox" name="terms" value="Terms" required/>
+                    <label for="termscheckbox"> I agree to these Terms and Conditions.</label>
+                </div>
+               
+                <div class="form-input">
+                <input type="submit" id="click-me" value="Submit">
+                <input type="button" value="Submit Form" onclick="validateForm()">
+                </div>
+                
+            </form>
+           </div> 
+            
             <div id="float_example" class="clearfix">
                 <img src="../img/logo_image.jpg" width="60px" height="60px" alt="">
                 <p>Lorem ipsum dolor sit amet,
@@ -58,6 +100,7 @@
         <footer>
             &copy; Caria-Gaye Oldham 2023
         </footer>
+        <script src="../scripts/script.js"></script>
 </body>
 
 </html>

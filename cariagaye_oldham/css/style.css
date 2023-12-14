@@ -381,7 +381,7 @@ nav.flexy-nav {
     padding: 10px;
 }
 
-form {
+.form-layout {
     display: flex;
     flex-flow: column;
     row-gap: 15px;
@@ -390,6 +390,7 @@ form {
 #click-me{
     background-color:rgb(74, 104, 250);
     color: aliceblue;
+    padding: 5px;
 }
 
 .split-screen{
@@ -427,4 +428,26 @@ form {
     width: 300px;
     height: 500px;
     border: 1px dotted rgb(246, 120, 204);
+}
+
+.form-container{
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed rgb(246, 120, 204);
+    width: 700px;
+}
+
+.form-contact{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+}
+
+.form-input{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.form-contact label{
+    margin-bottom: 5px;
 }
