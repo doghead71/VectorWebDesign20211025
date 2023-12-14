@@ -26,13 +26,13 @@
      
         <h1 style="color:green">Contact Us</h1><!-- TO BE CHANGED LATER -->
 
-        <div id="form-container" class="form-container">
-            <form>
+        <div id="form-container" class="form-container" name="contactForm">
+            <form name="contactForm" action="/process_contact.html">
                 <label for="fname">First Name</label>   
-                <input type="text" id="fname" name="firstname" placeholder="First name.." />
+                <input type="text" id="fname" name="firstname" placeholder="First name.." required />
                 <br/> <br/>
                 <label for="lname">Last Name</label>   
-                <input type="text" id="lname" name="lastname" placeholder="Last name.." />
+                <input type="text" id="lname" name="lastname" placeholder="Last name.." required />
                 <br/> <br/>
                 <label for="country">Country</label>
                 <select id="country" name="country">
@@ -44,12 +44,13 @@
                 <br/> <br/>
                 <label for="subject">Subject</label><br/>
                 <textarea id="subject" name="subject" placeholder="Write Something.."
-                    style="height: 200px;"></textarea>
+                    style="height: 200px;" required></textarea>
                     <br/> <br/>
                     <input type="checkbox" id="terms" name="terms" value="Terms" />
                     <label for="terms"> I agree to the terms and conditions </label>
                     <br/> <br/>
-                    <input type="Submit" value="Submit"  /> <!---->
+                    <input type="Submit" value="Submit" />
+                    <input type="button" value="Sumbit form" onclick="validateForm()" /> 
             </form>
         </div>
 
@@ -82,5 +83,7 @@
     <footer class="fontbigger">
         &copy; Giovanni McPherson 2023
     </footer>
+    <script src="../scripts/scripts.js"></script>
 </body>
+
 </html> 
