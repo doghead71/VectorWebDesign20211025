@@ -1,0 +1,142 @@
+
+html{
+    /* background-color: #080E06; */
+    color: #EFEDE2;
+    min-height: 100%;
+    background: url("../img/logan-stone-hCTLx7QrE-w-unsplash.jpg") rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    display: block;
+}
+
+#logo-main {
+    width: 200px;
+}
+
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0px 25px 0px;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+}
+
+h1 > span{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.home-text > h1{
+    width: 27ch;
+}
+
+.home-text > p{
+    font-size: 22px;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.home-text{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0px 10% 0px;
+}
+
+#home-button{
+    background-color: transparent;
+    color: #EFEDE2;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: .4px;
+    border: #EFEDE2 solid 2px;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#home-button:hover{
+    transition-duration: 0.4s;
+    background-color: #EFEDE2;
+    color: #080E06;
+    cursor:pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    padding: 20px;
+}
+
+nav > ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    display: inline;
+}
+
+.nav-list{
+    display: flex;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: #EFEDE2;
+}
+
+nav .active{
+    color: #6C9C2E;
+}
+
+nav a:visited{
+    color: none;
+}
+
+nav a:hover{
+    color: #6C9C2E;
+    transition: .3s;
+}
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+}
