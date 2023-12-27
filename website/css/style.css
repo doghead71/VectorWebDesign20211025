@@ -1,13 +1,18 @@
 
-html{
+.home-html{
     /* background-color: #080E06; */
     color: #EFEDE2;
     min-height: 100%;
-    background: url("../img/logan-stone-hCTLx7QrE-w-unsplash.jpg") rgba(8,14,6, 0.3);
+    background: url("../img/logan-stone-hCTLx7QrE-w-unsplash.jpg") ;
+    background-color: rgba(8,14,6, 0.3);
     background-position: center center;
     background-size: cover;
     background-blend-mode: multiply;
-    
+}
+
+html {
+    color: #EFEDE2;
+    background-color: #080E06;
 }
 
 body * {
@@ -18,53 +23,16 @@ body * {
 
 section {
     display: block;
+    padding: 0px 40px 0px 40px;
 }
 
 #logo-main {
     width: 200px;
 }
 
-h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 400;
-    font-size: 76px;
-    line-height: 90%;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 25px 0px 25px 0px;
-}
-
-p {
-    font-family: 'EB Garamond', serif;
-}
-
-h1 > span{
-    font-style: italic;
-    font-weight: 400;
-}
-
-.home-text > h1{
-    width: 27ch;
-}
-
-.home-text > p{
-    font-size: 22px;
-    text-align: center;
-    line-height: 120%;
-    margin-bottom: 25px;
-}
-
-.home-text{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0px 10% 0px;
-}
-
-#home-button{
-    background-color: transparent;
-    color: #EFEDE2;
+#home-button {
+    background-color: #EFEDE2;
+    color: #080E06;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: 20px;
@@ -77,10 +45,11 @@ h1 > span{
     text-decoration: none;
 }
 
-#home-button:hover{
+#home-button:hover {
     transition-duration: 0.4s;
-    background-color: #EFEDE2;
-    color: #080E06;
+    background-color: transparent;
+    color: #EFEDE2;
+    border: #EFEDE2 solid 2px;
     cursor:pointer;
 }
 
@@ -89,10 +58,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
-    padding: 20px;
+    padding: 40px;
 }
 
-nav > ul{
+nav > ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -102,11 +71,11 @@ nav li {
     display: inline;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
@@ -116,24 +85,179 @@ nav a{
     color: #EFEDE2;
 }
 
-nav .active{
+nav .active {
     color: #6C9C2E;
 }
 
-nav a:visited{
+nav a:visited {
     color: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #6C9C2E;
     transition: .3s;
 }
 
-footer{
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 76px;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0px 25px 0px;
+}
+
+h1 > span {
+    font-style: italic;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 51px;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+}
+
+
+.home-text> h1 {
+    width: 27ch;
+}
+
+.aboutus-header > h1 {
+    width: 27ch;   
+}
+
+.home-text > p {
+    font-size: 22px;
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.home-text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0px 10% 0px;
+}
+
+.aboutus-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20% 0px 20% 0px;
+    min-height: 100%;
+    background-image: url("../img/alex-bertha-Jyg7xHRmXiU-unsplash.jpg");
+    background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.flex-1 {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    flex-wrap: nowrap;
+    margin: 200px 0px 200px 0px;
+    justify-content: center;
+}
+
+.flex-1-text > h2{
+    width: 34ch;
+    margin-bottom: 20px;
+}
+
+.flex-1-text > p{
+    width: 55ch;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    line-height: 120%;
+    font-weight: 300;
+    /*font-style: italic;*/
+}
+
+.left-img {
+    width: 800px;
+}
+
+.flex-2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px 100px 0px;
+}
+
+.treat-card {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding:30px;
+    position: relative;
+}
+
+.treat-card > p{
+    width: 30ch;
+}
+
+.treat-card > img{
+    position: absolute;
+    top: -1%;
+}
+
+#about-img {
+    padding: 30% 0px 30% 0px;
+    min-height: 100%;
+    background-image: url("../img/engin-akyurt-IxX6XrMfu4U-unsplash.jpg") ;
+    
+    background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    margin: 100px 0px 100px 0px;
+}
+
+
+.flex-3 {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 200px;
+    margin-top: 50px;
+}
+
+.team-card > img {
+    width: 468px;
+}
+
+.team-card {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     text-align: center;
-    margin-top: 30px;
 }
 
 
