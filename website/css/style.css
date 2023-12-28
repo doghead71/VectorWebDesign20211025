@@ -160,6 +160,8 @@ footer {
     margin: 10px 0px 10px 0px;
 }
 
+/*----> HOME PAGE CSS <-----*/
+
 .home-text> h1 {
     width: 27ch;
 }
@@ -182,6 +184,82 @@ footer {
     align-items: center;
     padding: 10% 0px 10% 0px;
 }
+
+/* HOME PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px) {
+    .home-html {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    nav{
+        flex-flow: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .home-text > h1{
+        width: 30ch;
+        font-size: 51px;
+    }
+
+    .home-text > p{
+        font-size: 18px;
+    }
+
+    .home-text{
+        padding: 15% 0px 40% 0px;
+    }
+
+    #home-button {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+}
+
+/* HOME PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px) {
+    .home-html {
+        background-position:center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+    
+        nav{
+            flex-flow: wrap;
+            justify-content: center;
+            row-gap: 10px;
+        }
+
+        nav a{
+            font-size: 10px;
+        }
+    
+        .home-text > h1{
+            width: 20ch;
+            font-size: 40px;
+        }
+
+        .home-text > p{
+            font-size: 18px;
+        }
+    
+        .home-text{
+            padding: 15% 0px 70% 0px;
+        }
+
+        #home-button {
+            font-size: 16px;
+            padding: 10px 26px;
+        }
+
+        footer{
+            font-size: 12px;
+        }
+}
+
+/*----> ABOUT US PAGE CSS <-----*/
 
 .about-header {
     display: flex;
@@ -278,6 +356,77 @@ footer {
     align-items: center;
 }
 
+/* ABOUT US PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    .flex-1 {
+        flex-flow: column;
+        align-items: flex-start;
+        row-gap: 40px;
+        margin: 100px 0px 100px 0px;
+    }
+
+    .left-img {
+        width: 100%;
+    }
+    
+     .flex-1-text > h2{
+        width: 100%;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+
+    .flex-2{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .treat-card{
+        padding: 80px;
+    }
+
+    #about-img{
+        margin-top: 0px;
+        margin-bottom: 100px;
+        height: 250px;
+    }
+
+    .flex-3 {
+        flex-flow: column;
+        row-gap: 40px;
+       
+    }
+
+    .team-card > img {
+        width: 100%;
+    }
+}
+
+/* ABOUT US PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .page-header{
+        height: 550px;
+    }
+
+    .flex-1-text > h2{
+        width: 100%;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        font-size: 47px;
+    }
+
+    .flex-1-text > p{
+        font-size: 22px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .treat-card > img{
+        position: absolute;
+        top: 20%;
+    }
+}
+
+/*----> SERVICES PAGE CSS <-----*/
 
 .services-header {
     display: flex;
@@ -377,152 +526,6 @@ footer {
     font-size: 18px;
 }
 
-
-
-/* HOME PAGE MEDIA QUERIES - TABLET*/
-@media only screen and (max-width: 768px) {
-    .home-html {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }
-
-    nav{
-        flex-flow: wrap;
-        justify-content: center;
-        row-gap: 10px;
-    }
-
-    .home-text > h1{
-        width: 30ch;
-        font-size: 51px;
-    }
-
-    .home-text > p{
-        font-size: 18px;
-    }
-
-    .home-text{
-        padding: 15% 0px 40% 0px;
-    }
-
-    #home-button {
-        font-size: 16px;
-        padding: 10px 26px;
-    }
-}
-
-/* HOME PAGE MEDIA QUERIES - MOBILE*/
-@media only screen and (max-width: 425px) {
-    .home-html {
-        background-position:center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        }
-    
-        nav{
-            flex-flow: wrap;
-            justify-content: center;
-            row-gap: 10px;
-        }
-
-        nav a{
-            font-size: 10px;
-        }
-    
-        .home-text > h1{
-            width: 20ch;
-            font-size: 40px;
-        }
-
-        .home-text > p{
-            font-size: 18px;
-        }
-    
-        .home-text{
-            padding: 15% 0px 70% 0px;
-        }
-
-        #home-button {
-            font-size: 16px;
-            padding: 10px 26px;
-        }
-
-        footer{
-            font-size: 12px;
-        }
-}
-
-/* ABOUT US PAGE MEDIA QUERIES - TABLET*/
-@media only screen and (max-width: 768px){
-    .flex-1 {
-        flex-flow: column;
-        align-items: flex-start;
-        row-gap: 40px;
-        margin: 100px 0px 100px 0px;
-    }
-
-    .left-img {
-        width: 100%;
-    }
-    
-     .flex-1-text > h2{
-        width: 100%;
-        margin-bottom: 20px;
-        word-wrap: break-word;
-    }
-
-    .flex-2{
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .treat-card{
-        padding: 80px;
-    }
-
-    #about-img{
-        margin-top: 0px;
-        margin-bottom: 100px;
-        height: 250px;
-    }
-
-    .flex-3 {
-        flex-flow: column;
-        row-gap: 40px;
-       
-    }
-
-    .team-card > img {
-        width: 100%;
-    }
-}
-
-/* ABOUT US PAGE MEDIA QUERIES - MOBILE*/
-@media only screen and (max-width: 425px){
-    .page-header{
-        height: 550px;
-    }
-
-    .flex-1-text > h2{
-        width: 100%;
-        margin-bottom: 20px;
-        word-wrap: break-word;
-        font-size: 47px;
-    }
-
-    .flex-1-text > p{
-        font-size: 22px;
-        width: 100%;
-        word-wrap: break-word;
-    }
-
-    .treat-card > img{
-        position: absolute;
-        top: 20%;
-    }
-}
-
 /* SERVICES PAGE MEDIA QUERIES - TABLET*/
 @media only screen and (max-width: 768px){
     #services-pricing {
@@ -579,4 +582,104 @@ footer {
         width: 35ch;
         margin-top: 8px;
     }
+}
+
+
+/*----> FREQUENTLY ASKED QUESTIONS PAGE CSS <-----*/
+.faq-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    /* background-image: url("../img/li-yang-a8iCZvtrHpQ-unsplash.jpg");
+     background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply; */
+}
+
+.faq-header > h4 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    width: 50ch;
+} 
+
+.flex-faq-wrap{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: 50px;
+
+}
+
+.flex-5 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-6 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-5-text {
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+.flex-5-text > h5{
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.flex-5-text > p{
+    font-size: 20px;
+}
+
+
+.faq-note > h4{
+    font-size: 25px;
+    margin: 0px 100px 50px 100px;
+    text-align: center;
+}
+
+
+/* FREQUENTLY ASKED QUESTIONS PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    .faq-header > h1{
+        width: 20ch;
+    }
+
+    .faq-header > h4{
+        font-size: 27px;
+        line-height: 120%;
+    }
+}
+
+/* FREQUENTLY ASKED QUESTIONS PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .faq-header > h1{
+        width: 20ch;
+        font-size: 40px;
+    }
+
+    .faq-header > h4{
+        font-size: 23px;
+        line-height: 120%;
+        width: 30ch;
+    }
+
+    .flex-faq-wrap{
+    flex-flow: column nowrap;
+    
+   }
+
+   .faq-note > h4{
+    font-size: 25px;
+    margin: 0px 30px 50px 30px;
+    text-align: center;
+}
 }
