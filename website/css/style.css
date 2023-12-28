@@ -89,9 +89,7 @@ nav .active {
     color: #6C9C2E;
 }
 
-nav a:visited {
-    color: none;
-}
+
 
 nav a:hover {
     color: #6C9C2E;
@@ -513,14 +511,14 @@ footer {
 }
 
 
-#description{
+.description{
     width: 40ch;
     word-wrap: break-word;
     margin: 4px 0 7px;
     
 }
 
-#prices {
+.prices {
     font-family: 'Poppins', serif;
     font-weight: 300;
     line-height: 120%;
@@ -583,7 +581,7 @@ footer {
         margin-top: 40px;
     }
 
-    #description{
+    .description{
         width: 35ch;
         margin-top: 8px;
     }
