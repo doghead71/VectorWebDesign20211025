@@ -15,7 +15,7 @@ html {
     background-color: #080E06;
 }
 
-body * {
+body, h1, h2, h3, h4, h5, p {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -102,7 +102,8 @@ h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
     font-size: 76px;
-    line-height: 90%;
+    line-height: 1.033em;
+    letter-spacing: .025em;
     text-align: center;
     text-transform: uppercase;
     margin: 25px 0px 25px 0px;
@@ -114,25 +115,50 @@ h1 > span {
 }
 
 h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: 500;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 400;
     font-size: 51px;
-    line-height: 90%;
+    line-height: 1.059em;
+    letter-spacing: .025em;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cormorant Garamond', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 32px;
+}
+
+h4 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+    line-height: 39px;
+    
+}
+
+h5 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 22px;
 }
 
 p {
     font-family: 'EB Garamond', serif;
 }
 
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
 
 .home-text> h1 {
     width: 27ch;
@@ -157,13 +183,12 @@ p {
     padding: 10% 0px 10% 0px;
 }
 
-.aboutus-header {
+.about-header {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 20% 0px 20% 0px;
-    min-height: 100%;
+    height: 650px;
     background-image: url("../img/alex-bertha-Jyg7xHRmXiU-unsplash.jpg");
     background-color: rgba(8,14,6, 0.3);
     background-position: center center;
@@ -176,7 +201,7 @@ p {
     align-items: center;
     column-gap: 40px;
     flex-wrap: nowrap;
-    margin: 200px 0px 200px 0px;
+    margin: 100px 0px 100px 0px;
     justify-content: center;
 }
 
@@ -191,7 +216,6 @@ p {
     font-size: 26px;
     line-height: 120%;
     font-weight: 300;
-    /*font-style: italic;*/
 }
 
 .left-img {
@@ -223,23 +247,23 @@ p {
     top: -1%;
 }
 
-#about-img {
-    padding: 30% 0px 30% 0px;
+ #about-img {
+    padding: 20% 0px 20% 0px;
     min-height: 100%;
     background-image: url("../img/engin-akyurt-IxX6XrMfu4U-unsplash.jpg") ;
-    
     background-color: rgba(8,14,6, 0.3);
     background-position: center center;
     background-size: cover;
+    background-blend-mode: multiply;
     margin: 100px 0px 100px 0px;
-}
+} 
 
 
 .flex-3 {
     display: flex;
     flex-flow: row nowrap;
     column-gap: 200px;
-    margin-top: 50px;
+    margin: 30px 0px 100px 0px;
 }
 
 .team-card > img {
@@ -254,13 +278,305 @@ p {
     align-items: center;
 }
 
-footer {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    text-align: center;
+
+.services-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: url("../img/li-yang-a8iCZvtrHpQ-unsplash.jpg");
+    background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.services-intro > h4{
+    width: 645px;
+}
+
+.services-intro {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px 100px 0px;
 }
 
 
-@media only screen and (max-width: 600px) {
+.flex-wrapper{
+    width: 844px;
+    max-width: 844px;
+}
 
+.flex-4 > h3 {
+    margin-bottom: 15px;
+    font-weight: 600;
+} 
+
+#services-pricing {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0 100px;
+}
+
+#services-pricing-2 {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0 100px;
+}
+
+#services-pricing > img {
+    width: 800px;
+    
+}
+
+#services-pricing-2 > img {
+    width: 800px;
+}
+
+.flex-4 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: start;
+    padding: 0px 9% 0px 9%;
+}
+
+.flex-4-text {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    border-bottom: 1px solid #41392e;
+    margin-bottom: 30px;
+}
+
+.flex-4-price{
+    display: flex;
+    flex-flow: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+#description{
+    width: 50ch;
+    word-wrap: break-word;
+    margin: 1px 0 7px;
+    
+}
+
+#prices {
+    font-family: 'Poppins', serif;
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 18px;
+}
+
+
+
+/* HOME PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px) {
+    .home-html {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+
+    nav{
+        flex-flow: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .home-text > h1{
+        width: 30ch;
+        font-size: 51px;
+    }
+
+    .home-text > p{
+        font-size: 18px;
+    }
+
+    .home-text{
+        padding: 15% 0px 40% 0px;
+    }
+
+    #home-button {
+        font-size: 16px;
+        padding: 10px 26px;
+    }
+}
+
+/* HOME PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px) {
+    .home-html {
+        background-position:center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+    
+        nav{
+            flex-flow: wrap;
+            justify-content: center;
+            row-gap: 10px;
+        }
+
+        nav a{
+            font-size: 10px;
+        }
+    
+        .home-text > h1{
+            width: 20ch;
+            font-size: 40px;
+        }
+
+        .home-text > p{
+            font-size: 18px;
+        }
+    
+        .home-text{
+            padding: 15% 0px 70% 0px;
+        }
+
+        #home-button {
+            font-size: 16px;
+            padding: 10px 26px;
+        }
+
+        footer{
+            font-size: 12px;
+        }
+}
+
+/* ABOUT US PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    .flex-1 {
+        flex-flow: column;
+        align-items: flex-start;
+        row-gap: 40px;
+        margin: 100px 0px 100px 0px;
+    }
+
+    .left-img {
+        width: 100%;
+    }
+    
+     .flex-1-text > h2{
+        width: 100%;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+    }
+
+    .flex-2{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .treat-card{
+        padding: 80px;
+    }
+
+    #about-img{
+        margin-top: 0px;
+        margin-bottom: 100px;
+        height: 250px;
+    }
+
+    .flex-3 {
+        flex-flow: column;
+        row-gap: 40px;
+       
+    }
+
+    .team-card > img {
+        width: 100%;
+    }
+}
+
+/* ABOUT US PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .page-header{
+        height: 550px;
+    }
+
+    .flex-1-text > h2{
+        width: 100%;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        font-size: 47px;
+    }
+
+    .flex-1-text > p{
+        font-size: 22px;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .treat-card > img{
+        position: absolute;
+        top: 20%;
+    }
+}
+
+/* SERVICES PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    #services-pricing {
+        flex-flow: column nowrap;
+        
+    }
+    #services-pricing-2 {
+        flex-flow: column nowrap;
+        
+    }
+
+    #services-pricing > img{
+        width: 700px;
+    }
+
+    #services-pricing-2 > img{
+        width: 700px;
+    }
+    
+    .flex-wrapper {
+        width: 800px;
+    }
+
+    .flex-4{
+        margin-top: 40px;
+    }
+    
+}
+
+/* SERVICES PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .services-intro > h4{
+        width: 645px;
+        font-size: 30px;
+    }
+
+    #services-pricing > img{
+        width: 400px;
+    }
+
+    #services-pricing-2 > img{
+        width: 400px;
+    }
+    
+    .flex-wrapper {
+        width: 450px;
+    }
+
+    .flex-4{
+        margin-top: 40px;
+    }
+
+    #description{
+        width: 35ch;
+        margin-top: 8px;
+    }
 }
