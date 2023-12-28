@@ -841,8 +841,38 @@ form #submit:hover {
         cursor:pointer;
 }
 
+.form-button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 
-/* GALLERY PAGE MEDIA QUERIES - TABLET*/
+.flex-8{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin: 80px 0px;
+}
+
+.contact-info {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 20px;
+    row-gap: 10px;
+}
+
+.contact-info > h2{
+    font-size: 30px;
+}
+
+.contact-info > p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+/* CONTACT US PAGE MEDIA QUERIES - TABLET*/
 @media only screen and (max-width: 768px){
     .contact-header{
         height: 550px;
@@ -865,15 +895,29 @@ form #submit:hover {
         width: 100%;
     }
 
-    .form-button{
-        display: flex;
-        flex-flow: column;
-        align-items: center;
+    .flex-8{
+        flex-flow: column wrap;
+        justify-content: space-evenly;
     }
+
+    .contact-info{
+        align-items: center;
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+    .contact-info > h2{
+        font-size: 26px;
+    }
+    
+    .contact-info > p{
+
+        font-size: 14px;
+    }
+
 
 }
 
-/* CONTACT PAGE MEDIA QUERIES - MOBILE*/
+/* CONTACT US PAGE MEDIA QUERIES - MOBILE*/
 @media only screen and (max-width: 425px){
     .contact-header{
         height: 550px;
