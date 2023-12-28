@@ -403,7 +403,7 @@ footer {
 
 /* ABOUT US PAGE MEDIA QUERIES - MOBILE*/
 @media only screen and (max-width: 425px){
-    .page-header{
+    .about-header{
         height: 550px;
     }
 
@@ -493,7 +493,8 @@ footer {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: start;
-    padding: 0px 9% 0px 9%;
+    /* padding: 0px 9% 0px 9%; */
+    margin: 0px 9% 0px 9%;
 }
 
 .flex-4-text {
@@ -513,9 +514,9 @@ footer {
 
 
 #description{
-    width: 50ch;
+    width: 40ch;
     word-wrap: break-word;
-    margin: 1px 0 7px;
+    margin: 4px 0 7px;
     
 }
 
@@ -560,6 +561,10 @@ footer {
     .services-intro > h4{
         width: 645px;
         font-size: 30px;
+    }
+
+    .services-header{
+        height: 550px;
     }
 
     #services-pricing > img{
@@ -609,7 +614,6 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     margin-bottom: 50px;
-
 }
 
 .flex-5 {
@@ -651,11 +655,15 @@ footer {
 @media only screen and (max-width: 768px){
     .faq-header > h1{
         width: 20ch;
+        font-size: 50px;
     }
 
     .faq-header > h4{
         font-size: 27px;
         line-height: 120%;
+    }
+    .flex-faq-wrap{
+        flex-flow: row wrap;
     }
 }
 
@@ -663,7 +671,7 @@ footer {
 @media only screen and (max-width: 425px){
     .faq-header > h1{
         width: 20ch;
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .faq-header > h4{
@@ -673,8 +681,7 @@ footer {
     }
 
     .flex-faq-wrap{
-    flex-flow: column nowrap;
-    
+    flex-flow: row wrap;
    }
 
    .faq-note > h4{
@@ -682,4 +689,203 @@ footer {
     margin: 0px 30px 50px 30px;
     text-align: center;
 }
+}
+
+/*----> GALLERY PAGE CSS <-----*/
+.gallery-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: url("../img/huum-K65M3GbRYq8-unsplash.jpg");
+    background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.flex-7{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 100px 0px 100px 0px;
+}
+
+.gallery-img > img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin: 40px;
+}
+
+
+/* GALLERY PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    .gallery-header{
+        height: 550px;
+    }
+
+    .flex-7{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+    .gallery-img > img {
+        width: 400px;
+        height: 300px;
+        margin: 0px;
+    }
+}
+
+/* GALLERY PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .gallery-header{
+        height: 550px;
+    }
+
+    .gallery-img > img {
+        width: 300px;
+        height: 200px;
+        margin: 0px;
+    }
+}
+
+/*----> CONTACT PAGE CSS <-----*/
+.contact-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    background-image: url("../img/huum-NHLS5hOSH0c-unsplash.jpg");
+    background-color: rgba(8,14,6, 0.3);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.contact-text{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+}
+
+.contact-text > h2{
+    width: 34ch;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.form-wrap {
+    width: 750px;
+}
+
+.form-input{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 20px
+}
+.form-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.form-input > label{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 22px;
+    font-style: italic;
+    margin: 8px 0px;
+}
+
+.form-input > input, textarea {
+    background-color: transparent;
+    border-color: transparent; 
+    border-bottom: 1px solid #EFEDE2;
+    color: #EFEDE2;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+textarea {
+    height:200px;
+}
+
+form #submit{
+        background-color: #EFEDE2;
+        color: #080E06;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+        font-size: 20px;
+        font-style: italic;
+        letter-spacing: .4px;
+        border: #EFEDE2 solid 2px;
+        border-radius: 50px;
+        padding: 15px 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 30px 30px;
+}
+    
+form #submit:hover {
+        transition-duration: 0.4s;
+        background-color: transparent;
+        color: #EFEDE2;
+        border: #EFEDE2 solid 2px;
+        cursor:pointer;
+}
+
+
+/* GALLERY PAGE MEDIA QUERIES - TABLET*/
+@media only screen and (max-width: 768px){
+    .contact-header{
+        height: 550px;
+    }
+
+    .contact-text > h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .form-row{
+        flex-flow: column nowrap;
+    }
+
+    .form-input{
+        width: 100%;
+    }
+
+    .form-wrap{
+        width: 100%;
+    }
+
+    .form-button{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+}
+
+/* CONTACT PAGE MEDIA QUERIES - MOBILE*/
+@media only screen and (max-width: 425px){
+    .contact-header{
+        height: 550px;
+    }
+
+    .contact-header > h1 {
+        font-size: 45px;
+    }
+
+    .contact-text > h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
 }
