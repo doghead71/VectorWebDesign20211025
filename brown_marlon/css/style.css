@@ -1,0 +1,9 @@
+body {background-color: rgb(255, 240, 194)}
+h1 {color:brown !important;}
+.fontbigger {
+font-size: larger; /* confer with client */
+font-weight: bold;
+color: black /*important*/;
+}
+#soln_para {color:red}
+p {color:navy}
